@@ -1,0 +1,133 @@
+.best-app {
+  background: url("../../images/z-1.png") 200% no-repeat,
+  url("../../images/z-0.png") no-repeat bottom;
+
+  .aside {
+    background: #e2eaed;
+    height: 35px;
+    @media (max-width: 1199.98px)  {
+      height: auto;
+    }
+    border-radius: 18px;
+    align-items: center;
+    padding: 0;
+    i{
+      border-radius: 18px;
+      background-color: $light-yellow;
+      width: 39px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 0 10px 0 0;
+    }
+  }
+  .image {
+    .img {
+      position: relative;
+    }
+
+    .wrap {
+
+      display: flex;
+      justify-content: center;
+      width: 60%;
+      position: absolute;
+      bottom: 116px;
+      left: 90px;
+      color: $grey;
+      padding: 0;
+      @media (max-width: 1199.98px) {
+        bottom: 92px;
+        left: 70px;
+      }
+      @media (max-width: 991.98px) {
+        bottom: 155px;
+        left: 130px;
+        height: 250px;
+      }
+      @media (max-width: 767.98px) {
+        bottom: 100px;
+        left: 100px;
+        height: 200px;
+      }
+
+
+      @media (max-width: 575.98px) {
+        display: none;
+      }
+
+
+      .text {
+        text-align: center;
+        background: white;
+        @media (max-width: 991.98px) {
+          height: 55%;
+          font-size: 1.2rem;
+        }
+        @media (max-width: 767.98px) {
+          font-size: 1rem;
+        }
+      }
+
+      .btn {
+        padding: 0;
+        height: 51px;
+        @media (max-width: 991.98px) {
+          height: 89px;
+        }
+      }
+    }
+  }
+  .title {
+    line-height: 75px;
+    @include font(3.75rem,"Poppins - Semi Bold",$dark-blue);
+  }
+
+  .subtitle {
+    @include font(1.25rem,$color:$grey);
+    max-width: 481px;
+    padding: 20px 0;
+  }
+
+  .link {
+    align-items: center;
+    max-width: 349px;
+    justify-content: space-between;
+
+    .btn {
+      @include font($color:white);
+      font-weight: 700;
+      width: 170px;
+      height: 57px;
+      border-radius: 29px;
+      background-color: $sapphirine;
+    }
+
+    a {
+      @include font($color:$sapphirine);
+    }
+
+  }
+}
+
+@media (max-width: 991.98px) {
+  .best-app {
+    .subtitle{
+      max-width: 100%;
+    }
+    .aside{
+      margin: auto;
+    }
+    .link{
+      margin: 0 auto;
+    }
+  }
+}
+
+.w-sm-100 {
+  @media (max-width: 2991.98px) {
+    width: 100%;
+  }
+}

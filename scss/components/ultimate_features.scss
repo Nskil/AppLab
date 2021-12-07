@@ -1,0 +1,72 @@
+.ultimate_features {
+  .container {
+    @media (max-width: 1199.98px) {
+      .wro{
+        align-items: center;
+        margin: auto;
+        text-align: center;
+      }
+      .grid {
+        background-image: none!important;
+        background-size: 0;
+        text-align: center;
+        .wrapper{
+          align-items: center;
+          margin: auto;
+        }
+        .btn{
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .row {
+      .title {
+        @include font(2.25rem, "Poppins - Semi Bold", $dark-blue);
+      }
+
+      .subtitle {
+        @include font($color: $grey);
+      }
+    }
+
+    .grid {
+      background-image: url("../../images/Phone_copy.png");
+      background-position: 109%;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      .wrapper {
+        max-width: 625px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .wrap {
+          max-width: 259px;
+          padding: 60px 0 30px;
+
+          .title {
+            @include font(1.25rem, "Poppins - Semi Bold", $dark-blue);
+          }
+
+          .image {
+            padding: 0 0 36px;
+          }
+
+          .text {
+            padding: 15px 0;
+          }
+        }
+      }
+    }
+
+    .btn{
+      border-radius: 29px;
+      background-color: $sapphirine;
+      width: 170px;
+      height: 57px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}

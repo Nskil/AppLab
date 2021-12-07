@@ -1,0 +1,33 @@
+.code_integration {
+  .row {
+    max-width: 1115px;
+
+    .wrapper {
+
+      .title {
+        @include font(2.25rem, "Poppins - Semi Bold", $dark-blue);
+        padding: 29px 0;
+      }
+
+      .subtitle {
+        @include font(1rem, Poppins, $grey);
+      }
+
+      .btn {
+        @include font(1rem, Poppins, white);
+        font-weight: 700;
+        border-radius: 29px;
+        background-color: $sapphirine;
+        width: 170px;
+        height: 57px;
+        margin: 26px 0;
+      }
+    }
+  }
+}
+
+.w-md-100 {
+  @media (max-width: 991.98px) {
+    width: 100%;
+  }
+}
